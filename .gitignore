@@ -1,0 +1,10 @@
+# Dir
+.venv/
+.idea/
+venv/
+__pycache__/
+migrations/
+
+# File
+*.env
+*.sqlite3
