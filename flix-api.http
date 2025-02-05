@@ -2,4 +2,5 @@
 GET https://examples.http-client.intellij.net/get
     ?generated-in=PyCharm
 
-###
+### GET request all genres into database
+GET http://localhost:8000/genres/
