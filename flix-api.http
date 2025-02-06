@@ -1,5 +1,24 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=PyCharm
+### GET request all genres into database
+GET http://localhost:8000/genres/
 
-###
+### POST create a new gender
+POST http://localhost:8000/genres/
+Content-Type: application/json
+
+{
+    "name": "Romance"
+}
+
+### GET detail genre
+GET http://localhost:8000/genres/4/
+
+### PUT update genre
+PUT http://localhost:8000/genres/4/
+Content-Type: application/json
+
+{
+    "name": "Suspense"
+}
+
+### DELETE delete genre
+DELETE http://localhost:8000/genres/9/
