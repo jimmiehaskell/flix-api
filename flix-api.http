@@ -11,3 +11,14 @@ Content-Type: application/json
 
 ### GET detail genre
 GET http://localhost:8000/genres/4/
+
+### PUT update genre
+PUT http://localhost:8000/genres/4/
+Content-Type: application/json
+
+{
+    "name": "Suspense"
+}
+
+### DELETE delete genre
+DELETE http://localhost:8000/genres/9/
