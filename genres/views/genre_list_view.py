@@ -4,7 +4,6 @@ from genres.models import Genre
 from genres.serializers import GenreSerializer
 
 
-class GenreDetailView(generics.RetrieveAPIView):
+class GenreListView(generics.ListAPIView):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
-    lookup_field = 'pk'

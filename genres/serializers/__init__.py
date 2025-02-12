@@ -1,0 +1,1 @@
+from genres.serializers.genre_serializer import GenreSerializer
