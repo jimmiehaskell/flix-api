@@ -1,3 +1,3 @@
 from genres.views.genre_view import genre_create_list_view
 from genres.views.genre_detail_view import genre_detail_view
-from genres.views.list_genre_view import ListGenreView
+from genres.views.genre_list_view import GenreListView

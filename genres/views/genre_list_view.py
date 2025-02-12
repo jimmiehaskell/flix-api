@@ -4,6 +4,6 @@ from genres.models import Genre
 from genres.serializers import GenreSerializer
 
 
-class ListGenreView(generics.ListAPIView):
+class GenreListView(generics.ListAPIView):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
