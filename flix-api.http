@@ -6,18 +6,18 @@ POST http://localhost:8000/genres/create/
 Content-Type: application/json
 
 {
-    "name": "Romance"
+    "name": "Aventura"
 }
 
 ### GET detail genre
-GET http://localhost:8000/genres/1/
+GET http://localhost:8000/genres/15/
 
 ### PUT update genre
-PUT http://localhost:8000/genres/4/
+PUT http://localhost:8000/genres/15/update
 Content-Type: application/json
 
 {
-    "name": "Suspense"
+    "name": "Comédia"
 }
 
 ### DELETE delete genre
