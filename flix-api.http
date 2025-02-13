@@ -6,7 +6,7 @@ POST http://localhost:8000/genres/create/
 Content-Type: application/json
 
 {
-    "name": "SFI"
+    "name": "Policial"
 }
 
 ### GET detail genre
@@ -23,7 +23,9 @@ Content-Type: application/json
 ### DELETE delete genre
 DELETE http://localhost:8000/genres/11/delete
 
-#### End-poiints APP Actors
+
+####
+#### End-points APP Actors
 ### GET request all actors
 GET http://localhost:8000/actors/
 
@@ -52,3 +54,46 @@ Content-Type: application/json
 
 ### DELETE delete actor
 DELETE http://localhost:8000/actors/5/delete
+
+
+
+
+####
+#### End-points APP movies
+### GET request all movies
+GET http://localhost:8000/movies/
+
+### POST create a new movie
+POST http://localhost:8000/movies/create/
+Content-Type: application/json
+
+{
+    "title": "O Irlandês",
+    "release_date": "2019-02-03",
+    "resume": "Um assassino lembra que tal vez esteve envolvido na morte de Jimmy Hoffa.",
+    "genre": 18,
+    "actors": [
+        1
+    ]
+}
+
+### GET detail movie
+GET localhost:8000/movies/3/
+
+### PUT update actor
+PUT localhost:8000/movies/3/update
+Content-Type: application/json
+
+{
+    "title": "O Irlandês",
+    "release_date": "2019-02-03",
+    "resume": "Um assassino lembra que tal vez esteve envolvido na morte de Jimmy Hoffa.",
+    "genre": 16,
+    "actors": [
+        1
+    ]
+}
+
+### DELETE delete actor
+DELETE http://localhost:8000/movies/3/delete
+
