@@ -6,7 +6,7 @@ POST http://localhost:8000/genres/create/
 Content-Type: application/json
 
 {
-    "name": "Aventura"
+    "name": "SFI"
 }
 
 ### GET detail genre
@@ -22,3 +22,33 @@ Content-Type: application/json
 
 ### DELETE delete genre
 DELETE http://localhost:8000/genres/11/delete
+
+#### End-poiints APP Actors
+### GET request all actors
+GET http://localhost:8000/actors/
+
+### POST create a new actor
+POST http://localhost:8000/actors/create/
+Content-Type: application/json
+
+{
+    "name": "Marlon Brando",
+    "birthday": "1190-04-03",
+    "nationality": "USA"
+}
+
+### GET detail actor
+GET localhost:8000/actors/2/
+
+### PUT update actor
+PUT localhost:8000/actors/2/update
+Content-Type: application/json
+
+{
+    "name": "Jack Nicholson",
+    "birthday": "1937-04-22",
+    "nationality": "USA"
+}
+
+### DELETE delete actor
+DELETE http://localhost:8000/actors/5/delete
