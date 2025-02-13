@@ -1,0 +1,1 @@
+from actors.serializers.actor_serializer import ActorSerializer

@@ -23,6 +23,7 @@ INSTALLED_APPS = [
 
     # APPs
     'genres.apps.GenresConfig',
+    'actors.apps.ActorsConfig',
 ]
 
 MIDDLEWARE = [
