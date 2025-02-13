@@ -23,7 +23,9 @@ Content-Type: application/json
 ### DELETE delete genre
 DELETE http://localhost:8000/genres/11/delete
 
-#### End-poiints APP Actors
+
+####
+#### End-points APP Actors
 ### GET request all actors
 GET http://localhost:8000/actors/
 

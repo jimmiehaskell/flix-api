@@ -22,8 +22,9 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # APPs
-    'genres.apps.GenresConfig',
     'actors.apps.ActorsConfig',
+    'genres.apps.GenresConfig',
+    'movies.apps.MoviesConfig',
 ]
 
 MIDDLEWARE = [
