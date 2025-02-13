@@ -1,0 +1,1 @@
+from movies.serializers.movie_serializer import MovieSerializer
