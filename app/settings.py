@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'actors.apps.ActorsConfig',
     'genres.apps.GenresConfig',
     'movies.apps.MoviesConfig',
+    'reviews.apps.ReviewsConfig',
 ]
 
 MIDDLEWARE = [
