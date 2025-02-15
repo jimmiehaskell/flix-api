@@ -1,7 +1,7 @@
 ####
 #### End-points APP movies
 ### GET request all movies
-GET http://localhost:8000/movies/
+GET http://localhost:8000/api/v1/movies
 
 ### POST create a new movie
 POST http://localhost:8000/movies/create/

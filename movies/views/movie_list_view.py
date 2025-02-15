@@ -1,3 +1,4 @@
+from django.db.models import Avg
 from rest_framework import generics
 
 from movies.models import Movie
