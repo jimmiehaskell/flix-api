@@ -1,0 +1,29 @@
+####
+#### End-points APP Reviews
+### GET request all reviews
+GET http://localhost:8000/reviews
+
+### POST create a new review
+POST http://localhost:8000/reviews/create
+Content-Type: application/json
+
+{
+    "movie": 8,
+    "rating": 5,
+    "comment": "Um clássico absoluto. Mesmo sendo de 1975, é um filme que envelheceu muito bem. Atuações soberbas, um roteiro inteligente, direção inspirada, além de uma bela trilha sonora e outros elementos técnicos, Um Estranho no Ninho é um maravilhoso filme que fará você rir, chorar, sentir raiva e se importar com cada personagem."
+}
+
+### GET detail review
+GET localhost:8000/reviews/2
+
+### PUT update review
+PUT localhost:8000/reviews/6/update
+Content-Type: application/json
+
+{
+    "rating": 5,
+    "comment": "Um clássico absoluto. Mesmo sendo de 1975, é um filme que envelheceu muito bem. Atuações soberbas, um roteiro inteligente, direção inspirada, além de uma bela trilha sonora e outros elementos técnicos, Um Estranho no Ninho é um maravilhoso filme que fará você rir, chorar, sentir raiva e se importar com cada personagem."
+}
+
+### DELETE delete review
+DELETE http://localhost:8000/reviews/6/delete

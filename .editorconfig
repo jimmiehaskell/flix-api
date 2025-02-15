@@ -35,3 +35,8 @@ indent_size = 2
 
 [{*.yaml,*.yml,dbt_project.yml}]
 indent_size = 2
+
+[*.py]
+max_line_length = 80
+trim_trailing_whitespace = true
+insert_final_newline = true

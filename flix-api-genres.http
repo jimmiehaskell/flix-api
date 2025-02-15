@@ -1,0 +1,26 @@
+####
+#### End-points APP Genres
+### GET request all genres into database
+GET http://localhost:8000/genres/
+
+### POST create a new gender
+POST http://localhost:8000/genres/create/
+Content-Type: application/json
+
+{
+    "name": "Animação"
+}
+
+### GET detail genre
+GET http://localhost:8000/genres/15/
+
+### PUT update genre
+PUT http://localhost:8000/genres/15/update
+Content-Type: application/json
+
+{
+    "name": "Comédia"
+}
+
+### DELETE delete genre
+DELETE http://localhost:8000/genres/10/delete

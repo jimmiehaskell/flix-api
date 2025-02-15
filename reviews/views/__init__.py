@@ -1,0 +1,5 @@
+from reviews.views.review_create_view import ReviewCreateView
+from reviews.views.review_delete_view import ReviewDeleteView
+from reviews.views.review_detail_views import ReviewDetailView
+from reviews.views.review_list_view import ReviewListView
+from reviews.views.review_update_view import ReviewUpdateView
