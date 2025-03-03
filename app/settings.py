@@ -24,6 +24,7 @@ INSTALLED_APPS = [
 
     # APPs
     'actors.apps.ActorsConfig',
+    'authentication.apps.AuthenticationConfig',
     'genres.apps.GenresConfig',
     'movies.apps.MoviesConfig',
     'reviews.apps.ReviewsConfig',
