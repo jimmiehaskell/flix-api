@@ -20,6 +20,7 @@ INSTALLED_APPS = [
 
     # Third-party libraries
     'rest_framework',
+    'rest_framework_simplejwt',
 
     # APPs
     'actors.apps.ActorsConfig',
