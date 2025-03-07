@@ -1,7 +1,9 @@
+@auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwOTcxNDIwLCJpYXQiOjE3NDA5NzExMjAsImp0aSI6ImUyZmI5ZGVkNDFkMTRkNmQ4YjcxZGVjZDU4NjNiYzdkIiwidXNlcl9pZCI6MX0.bzeLpFLShvKZWhyS88n9hb80bN0uyKoN0hgcjnsjNFQ
 ####
 #### End-points APP Actors
 ### GET request all actors
-GET http://localhost:8000/actors/
+GET http://localhost:8000/api/v1/actors/
+Authorization: Bearer {{auth_token}}
 
 ### POST create a new actor
 POST http://localhost:8000/actors/create/

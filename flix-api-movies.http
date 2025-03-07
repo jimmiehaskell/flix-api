@@ -1,7 +1,11 @@
+> {% client.global.set("auth_token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwOTcwODg4LCJpYXQiOjE3NDA5NzA1ODgsImp0aSI6Ijk3NWVjNmJiYmU1NzRjM2JhNTgxOTU5NzU2NTZkYTY0IiwidXNlcl9pZCI6MX0.sXOZSDFYh5W6zdzHSi9R1tYbGrHdERzomPG4gmM6FyU"); %}
+
 ####
 #### End-points APP movies
 ### GET request all movies
+@auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwOTcwODg4LCJpYXQiOjE3NDA5NzA1ODgsImp0aSI6Ijk3NWVjNmJiYmU1NzRjM2JhNTgxOTU5NzU2NTZkYTY0IiwidXNlcl9pZCI6MX0.sXOZSDFYh5W6zdzHSi9R1tYbGrHdERzomPG4gmM6FyU
 GET http://localhost:8000/api/v1/movies
+Authorization: Bearer {{auth_token}}
 
 ### POST create a new movie
 POST http://localhost:8000/movies/create/

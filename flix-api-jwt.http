@@ -1,0 +1,10 @@
+### POST gera um token
+POST http://localhost:8000/api/v1/authentication/token/
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": 1
+}
+
+> {% client.global.set("auth_token", response.body[1]); %}
