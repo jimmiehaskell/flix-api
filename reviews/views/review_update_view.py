@@ -1,10 +1,13 @@
 from rest_framework import generics, status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from reviews.models import Review
 
 
 class ReviewUpdateView(generics.RetrieveUpdateAPIView):
+    permission_classes = (IsAuthenticated,)
+
     def put(self, request, *args, **kwargs):
         pk = self.kwargs['pk']
         review = Review.objects.get(pk=pk)

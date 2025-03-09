@@ -1,10 +1,13 @@
 from rest_framework import generics, status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from actors.models import Actor
 
 
 class ActorUpdateView(generics.UpdateAPIView):
+    permission_classes = (IsAuthenticated,)
+
     def put(self, request, *args, **kwargs):
         pk = self.kwargs['pk']
         actor = Actor.objects.get(pk=pk)
